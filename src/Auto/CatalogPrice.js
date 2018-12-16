@@ -8,14 +8,27 @@ class CatalogPrice extends React.PureComponent {
           display: "sae2",
           displayacea: "acea2",
           brands: [],
+          liters: [],
         }
       }; 
 
 
 filterBy=(event)=>{
-    console.log(event);
+    console.log(event.target.value);
+if(event.target.checked){
+    this.setState({brands:event.target.value})
+}else {
     this.setState({brands:""})
 }
+};
+filterBy2=(event)=>{
+    console.log(event.target.value);
+if(event.target.checked){
+    this.setState({liters:event.target.value})
+}else {
+    this.setState({liters:""})
+}
+};
 btn =(e)=>{
     console.log(e);
 if(this.state.display=="sae2n"){
@@ -34,10 +47,17 @@ if(this.state.displayacea=="acea2n"){
 };
 
    render() {
-    // let brands = [],
-    // brands = data.filter(el=>el.data===el.value);
 
 const {data, click} = this.props;
+let oil = [];
+if (this.state.brands==""){
+    oil=data
+}else{
+    oil = data.filter(el=>(el.brand===this.state.brands));
+    // filter(el=>(el.liter===this.state.liters));
+   
+};
+
       return (
       <div>
 		  <div className="price-all">
@@ -70,14 +90,14 @@ const {data, click} = this.props;
         <p> <font color="#ce9840" ><b>Производитель</b></font></p>
         <div>
             <p>
-            <input type="checkbox" name="option1" value="Castrol" id="box-1" onClick={this.filterBy} /><label for="box-1" className="name-maker">Castrol</label><br/>
-            <input type="checkbox" name="option2" value="Ford" id="box-2"/><label for="box-2"className="name-maker">Ford</label><br/>
-            <input type="checkbox" name="option3" value="General Motors" id="box-3"/><label for="box-3"className="name-maker">General Motors</label><br/> 
-            <input type="checkbox" name="option4" value="Liqui Moly" id="box-4"/><label for="box-4"className="name-maker">Liqui Moly</label><br/> 
-            <input type="checkbox" name="option5" value="Mobil" id="box-5"/><label for="box-5"className="name-maker">Mobil</label><br/>
-            <input type="checkbox" name="option6" value="Nissan" id="box-6"/><label for="box-6"className="name-maker">Nissan</label><br/> 
-            <input type="checkbox" name="option7" value="Total" id="box-7"/><label for="box-7"className="name-maker">Total</label><br/>
-            <input type="checkbox" name="option8" value="a8" id="box-8"/><label for="box-8"className="name-maker" id="one">Еще один</label>
+            <input type="checkbox" name="option1" value="Castrol" id="box-1" onClick={this.filterBy} onChange={this.filterChecked}/><label for="box-1" className="name-maker">Castrol</label><br/>
+            <input type="checkbox" name="option2" value="Ford" id="box-2"onClick={this.filterBy}/><label for="box-2"className="name-maker">Ford</label><br/>
+            <input type="checkbox" name="option3" value="General Motors" id="box-3"onClick={this.filterBy}/><label for="box-3"className="name-maker">General Motors</label><br/> 
+            <input type="checkbox" name="option4" value="Liqui Moly" id="box-4"onClick={this.filterBy}/><label for="box-4"className="name-maker">Liqui Moly</label><br/> 
+            <input type="checkbox" name="option5" value="Mobil" id="box-5"onClick={this.filterBy}/><label for="box-5"className="name-maker">Mobil</label><br/>
+            <input type="checkbox" name="option6" value="Nissan" id="box-6"onClick={this.filterBy}/><label for="box-6"className="name-maker">Nissan</label><br/> 
+            <input type="checkbox" name="option7" value="Total" id="box-7"onClick={this.filterBy}/><label for="box-7"className="name-maker">Total</label><br/>
+            <input type="checkbox" name="option8" value="a8" id="box-8"onClick={this.filterBy}/><label for="box-8"className="name-maker" id="one">Еще один</label>
             </p>
             <p className="dot" onClick={click}>Все производители </p>
         </div>
@@ -104,11 +124,11 @@ const {data, click} = this.props;
         </div>
         <div className="characteristic-OIL">
             <p> <font color="#ce9840" ><b> Объем, л</b></font></p>
-            <p><input type="checkbox" name="option1" value="a1" id="box-1"/><label for="box-1" className="name-maker">0,1</label><br/>
-            <input type="checkbox" name="option2" value="a2" id="box-2"/><label for="box-2"className="name-maker">0.25</label><br/>
-            <input type="checkbox" name="option3" value="a3" id="box-3"/><label for="box-3"className="name-maker">0.5</label><br/> 
-            <input type="checkbox" name="option4" value="a4" id="box-4"/><label for="box-4"className="name-maker">0.6</label><br/> 
-            <input type="checkbox" name="option5" value="a5" id="box-5"/><label for="box-5"className="name-maker">1</label><br/>
+            <p><input type="checkbox" name="option1" value="0.1" id="box-1" onClick={this.filterBy2}/><label for="box-1" className="name-maker">0.1</label><br/>
+            <input type="checkbox" name="option2" value="0.25" id="box-2"/><label for="box-2"className="name-maker">0.25</label><br/>
+            <input type="checkbox" name="option3" value="0.5" id="box-3"/><label for="box-3"className="name-maker">0.5</label><br/> 
+            <input type="checkbox" name="option4" value="0.6" id="box-4"/><label for="box-4"className="name-maker">0.6</label><br/> 
+            <input type="checkbox" name="option5" value="1" id="box-5"/><label for="box-5"className="name-maker">1</label><br/>
             </p>
             <p><a href="#" className="dot">Смотреть весь список</a></p>
         </div>
@@ -118,7 +138,7 @@ const {data, click} = this.props;
     </div>	
 </div>
     <div className="oil" id="oil">
-            {data.map((el)=>  
+            {oil.map((el)=>  
             <div className="oilcatalog">
               <ul className="oildiv">
                     <li class="oilfoto">
@@ -128,7 +148,7 @@ const {data, click} = this.props;
                         <font color="black" ><b>{el.name}</b></font>
                     </li>
                     <li class="oiltxt2"	>
-						1&nbsp;л,&nbsp; Минеральное,&nbsp; 10W-40
+						{el.liter}&nbsp;л,&nbsp; Минеральное,&nbsp; 10W-40
 					</li>             
                     <li class="oiltxt3"	>
                             завтра после 00:30
