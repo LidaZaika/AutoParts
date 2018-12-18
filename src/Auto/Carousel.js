@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-class Crousel extends Component {
+class Carousel extends Component {
   render() {
     return (
-      <div>
+			<div>
 					<div className="carousel-wrapper" style={{height: "500px"}} id="carousel">
 				<span id="target-item-1" ></span>
 				<span id="target-item-2" ></span>
@@ -16,7 +16,7 @@ class Crousel extends Component {
 					<li><p>В течение недели Вы можете вернуть товары, купленные<br/> в нашем магазине</p></li>
 				</ul>
 				</div>
-				<div><img height="400px" width="400px" alt="" src="images/return.png"/></div>
+				<div><img height="400px" width="400px" alt="" src="static/images/return.png"/></div>
 			</div>
 			<div className="carousel-item item-2">
 				<a className="arrow arrow-prev" href="#target-item-1"></a>
@@ -27,12 +27,12 @@ class Crousel extends Component {
 						<li><p>При покупке пяти любых одинаковых<br/>наименований моторных масел</p></li>
 					</ul>
 				</div>	
-				<div className="img-carousel"><img height="100%" alt="" width="100%" src="images/slide1.jpg"/></div>
+				<div className="img-carousel"><img height="100%" alt="" width="100%" src="static/images/slide1.jpg"/></div>
 			</div>	
 			</div>
-     </div> 
+			</div>
     );
   }
 }
 
-export default Crousel;
+export default Carousel;

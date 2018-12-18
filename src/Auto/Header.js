@@ -16,10 +16,13 @@ class Header extends Component {
 						<div id="logo2">автомобильные детали</div>
 					</div>	
 					<div id="Bag"><a href="/"><img height="40px" width="40px" alt=""
-						src="images/profile.png"/></a>
+						src="static/images/profile.png"/></a>
 										<a href="/Bag"><img height="40px" width="40px" alt=""
-						src="images/bag.png"/></a>
+						src="static/images/bag.png"/></a>
 					</div>
+					<div className="hamburger-menu-header">
+        <img height="40px" width="40px" src="static/images/hamburger-menu.png"/>&nbsp;&nbsp;
+				</div>
 		</header>
     );
   }

@@ -4,12 +4,12 @@ class SectionName extends Component {
   render() {
     return (
       <div>
-		<div class="section">
-			<div class="menu-section">
+		<div className="section">
+			<div className="menu-section">
 				<p>Каталог &nbsp;	|&nbsp;	Сопутствующие товары &nbsp;	|&nbsp;	Масла &nbsp;|&nbsp;&nbsp;	</p>
 				<h3>Масла моторные</h3>
 			</div>
-			<div class="page">
+			<div className="page">
 				Товары 1-12 из 1000
 			</div>
 		</div>

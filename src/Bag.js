@@ -4,6 +4,7 @@ import Header from './Auto/Header';
 import Psk from './Auto/Psk';
 import SectionNameBag from './Auto/SectionNameBag';
 import BagProduct from './Auto/BagProduct';
+import Order from './Auto/Order';
 import Footer from './Auto/Footer';
 
 class Bag extends React.PureComponent {
@@ -15,6 +16,7 @@ class Bag extends React.PureComponent {
         <Psk /> 
         <SectionNameBag />
         <BagProduct />
+        <Order />
         <Footer />
      
       </div>

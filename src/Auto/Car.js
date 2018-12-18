@@ -3,214 +3,211 @@ import React, { Component } from 'react';
 class Car extends Component {
   render() {
     return (
-      <div>
         <div id="car" className="carblock" style={{display: "block"}}><h2>Каталог запчастей по маркам авто</h2>
 			<div className="top">
 				<div className="listcar">
 					<ul>
 						<li className="brand">
 							<span className="letter">A</span>
-							<a href="index.html">Acura</a>
+							<a href="/">Acura</a>
 						</li>
 						<li className="brand">
 							<span className="letter"></span>
-							<a href="index.html">Alfa Romeo</a>
+							<a href="/">Alfa Romeo</a>
 						</li>
 						<li className="brand">
 							<span className="letter"></span>
-							<a href="index.html">Audi</a>
+							<a href="/">Audi</a>
 						</li><br/>
 						<li className="brand">
 							<span className="letter">B</span>
-							<a href="index.html">BMW</a>
+							<a href="/">BMW</a>
 						</li><br/>
 						<li className="brand">
 							<span className="letter">C</span>
-							<a href="index.html">Cadillac</a>
+							<a href="/">Cadillac</a>
 						</li>
 						<li className="brand">
 							<span className="letter"></span>
-							<a href="index.html">Chery</a>
+							<a href="/">Chery</a>
 						</li>
 						<li className="brand">
 							<span className="letter"></span>
-							<a href="index.html">Chevrolet</a>
+							<a href="/">Chevrolet</a>
 						</li>
 						<li className="brand">
 							<span className="letter"></span>
-							<a href="index.html">Chrysler</a>
+							<a href="/">Chrysler</a>
 						</li>
 						<li className="brand">
 							<span className="letter"></span>
-							<a href="index.html">Citroen</a>
+							<a href="/">Citroen</a>
 						</li><br/>
 						<li className="brand">
 							<span className="letter">D</span>
-							<a href="index.html">Daewoo</a>
+							<a href="/">Daewoo</a>
 						</li>					
 					</ul>
 					<ul>
 						<li className="brand">
 							<span className="letter">F</span>
-							<a href="index.html">Fiat</a>
+							<a href="/">Fiat</a>
 						</li>
 						<li className="brand">
 							<span className="letter"></span>
-							<a href="index.html">Ford</a>
+							<a href="/">Ford</a>
 						</li>
 						<li className="brand">
 							<span className="letter"></span>
-							<a href="index.html">Ford USA</a>
+							<a href="/">Ford USA</a>
 						</li><br/>
 						<li className="brand">
 							<span className="letter">G</span>
-							<a href="index.html">Geely</a>
+							<a href="/">Geely</a>
 						</li>
 						<li className="brand">
 							<span className="letter"></span>
-							<a href="index.html">Great Wall</a>
+							<a href="/">Great Wall</a>
 						</li>
 						<br/>
 						<li className="brand">
 							<span className="letter">H</span>
-							<a href="index.html">Honda</a>
+							<a href="/">Honda</a>
 						</li>
 						<li className="brand">
 							<span className="letter"></span>
-							<a href="index.html">Hyundai</a>
+							<a href="/">Hyundai</a>
 						</li><br/>
 						<li className="brand">
 							<span className="letter">I</span>
-							<a href="index.html">Infiniti</a>
+							<a href="/">Infiniti</a>
 						</li>
 						<li className="brand"><br/>
 							<span className="letter">J</span>
-							<a href="index.html">Jaguar</a>
+							<a href="/">Jaguar</a>
 						</li>			
 					</ul>
 					<ul>
 						<li className="brand">
 							<span className="letter">K</span>
-							<a href="index.html">Kia</a>
+							<a href="/">Kia</a>
 						</li><br/>
 						<li className="brand">
 							<span className="letter">L</span>
-							<a href="index.html">Land Rover</a>
+							<a href="/">Land Rover</a>
 						</li>
 						<li className="brand">
 							<span className="letter"></span>
-							<a href="index.html">Lexus</a>
+							<a href="/">Lexus</a>
 						</li>
 						<li className="brand">
 							<span className="letter"></span>
-							<a href="index.html">Lifan</a>
+							<a href="/">Lifan</a>
 						</li><br/>
 						<li className="brand">
 							<span className="letter">M</span>
-							<a href="index.html">Mazda</a>
+							<a href="/">Mazda</a>
 						</li>
 						<li className="brand">
 							<span className="letter"></span>
-							<a href="index.html">Mercedes</a>
+							<a href="/">Mercedes</a>
 						</li>
 						<li className="brand">
 							<span className="letter"></span>
-							<a href="index.html">MINI</a>
+							<a href="/">MINI</a>
 						</li>
 						<li className="brand">
 							<span className="letter"></span>
-							<a href="index.html">Mitsubishi</a>
+							<a href="/">Mitsubishi</a>
 						</li><br/>
 						<li className="brand">
 							<span className="letter">N</span>
-							<a href="index.html">Nissan</a>
+							<a href="/">Nissan</a>
 						</li>
-						
 					</ul>
 					<ul>
 						<li className="brand">
 							<span className="letter">O</span>
-							<a href="index.html">Opel</a>
+							<a href="/">Opel</a>
 						</li><br/>
 						<li className="brand">
 							<span className="letter">P</span>
-							<a href="index.html">Peugeot</a>
+							<a href="/">Peugeot</a>
 						</li>
 						<li className="brand">
 							<span className="letter"></span>
-							<a href="index.html">Pontilac</a>
+							<a href="/">Pontilac</a>
 						</li>
 						<li className="brand">
 							<span className="letter"></span>
-							<a href="index.html">Porsche</a>
+							<a href="/">Porsche</a>
 						</li><br/>
 						<li className="brand">
 							<span className="letter">R</span>
-							<a href="index.html">Renault</a>
+							<a href="/">Renault</a>
 						</li>
 						<li className="brand">
 							<span className="letter"></span>
-							<a href="index.html">Rover</a>
+							<a href="/">Rover</a>
 						</li><br/>
 						<li className="brand">
 							<span className="letter">S</span>
-							<a href="index.html">Saab</a>
+							<a href="/">Saab</a>
 						</li>
 						<li className="brand">
 							<span className="letter"></span>
-							<a href="index.html">Seat</a>
+							<a href="/">Seat</a>
 						</li>
 						<li className="brand">
 							<span className="letter"></span>
-							<a href="index.html">Skoda</a>
+							<a href="/">Skoda</a>
 						</li>
 						<li className="brand">
 							<span className="letter"></span>
-							<a href="index.html">Smart</a>
+							<a href="/">Smart</a>
 						</li>
 					</ul>
 					<ul>
 						<li className="brand">
 							<span className="letter">S</span>
-							<a href="index.html">Ssangyong</a>
+							<a href="/">Ssangyong</a>
 						</li>
 						<li className="brand">
 							<span className="letter"></span>
-							<a href="index.html">Subarut</a>
+							<a href="/">Subarut</a>
 						</li>
 						<li className="brand">
 							<span className="letter"></span>
-							<a href="index.html">Suzuki</a>
+							<a href="/">Suzuki</a>
 						</li><br/>
 						<li className="brand">
 							<span className="letter">T</span>
-							<a href="index.html">Toyota</a>
+							<a href="/">Toyota</a>
 						</li><br/>
 						<li className="brand">
 							<span className="letter">V</span>
-							<a href="index.html">Volkswagen</a>
+							<a href="/">Volkswagen</a>
 						</li>
 						<li className="brand">
 							<span className="letter"></span>
-							<a href="index.html">Volvo</a>
+							<a href="/">Volvo</a>
 						</li><br/>
 						<li className="brand">
 							<span className="letter">рус</span>
-							<a href="index.html">ВАЗ</a>
+							<a href="/">ВАЗ</a>
 						</li>
 						<li className="brand">
 							<span className="letter"></span>
-							<a href="index.html">ЗАЗ</a>
+							<a href="/">ЗАЗ</a>
 						</li>
 						<li className="brand">
 							<span className="letter"></span>
-							<a href="index.html">УАЗ</a>
+							<a href="/">УАЗ</a>
 						</li>
 					</ul>						
 				</div>
 			</div>
 		</div>
-	</div>
     );
   }
 }

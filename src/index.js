@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import Catalog from './Catalog';
 import Bag from './Bag';
@@ -19,6 +18,7 @@ const Rout = function () {
         <Switch>
     <Route path="/" exact component={App} />
     <Route path="/catalog/" component={Catalog} />
+    <Route path="/api/:page" />
     <Route path="/bag/" component={Bag} />
         </Switch>
 </Router>)

@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
-class About extends Component {
+class About extends PureComponent {
   render() {
     return (
-      <div>
         <div className="about">
           <div><p>50 млн предложений<br/> оригинальных автозапчастей <br/>
             по актуальным ценам<br/> с курьерской доставкой по городу и области</p>
@@ -11,7 +10,6 @@ class About extends Component {
                 <div className="tabs">
                   <input id="tab1" type="radio" name="tabs" checked/>
                   <label for="tab1" title="Вкладка 1"><span className="transfortext">Номер детали</span></label>
-                
                   <input id="tab2" type="radio" name="tabs"/>
                   <label for="tab2" title="Вкладка 2"><span className="transfortext">VIN номер</span></label>
                   <input id="tab3" type="radio" name="tabs"/>
@@ -28,9 +26,8 @@ class About extends Component {
                 </div>
             </form>
           </div>
-          <div><img height="410px" width="100%" alt="" src="images/foto4.jpg"/></div>
+          <div className="imgAbout"><img height="410px" width="100%" alt="" src="static/images/foto4.jpg"/></div>
           </div>
-            </div>
     );
   }
 }

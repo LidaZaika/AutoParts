@@ -5,21 +5,29 @@ import SectionName from './Auto/SectionName';
 import CatalogPrice from './Auto/CatalogPrice';
 import Footer from './Auto/Footer';
 import {connect} from 'react-redux'
-import {getProducts} from './action/products.action';
+import {getProducts, filterProducts} from './action/products.action';
 
 class Catalog extends React.PureComponent {
   
   constructor(props){
     super(props);
     this.props.getProducts();
+    this.props.filterProducts();
     this.state={
-
+        
     }
 
   }; 
-
+// filterBy=(event)=>{
+//     console.log(event.target.value);
+// if(event.target.checked){
+//     this.setState({filterProducts})
+// }else {
+//     this.setState({getProducts})
+// }
+// };
   render() {
-    const {products, getProducts}=this.props;
+    const {products, getProducts, filterProducts}=this.props;
     
     return (
       <div className="Catalog">
@@ -28,6 +36,7 @@ class Catalog extends React.PureComponent {
         <CatalogPrice 
         data={products}
         click={getProducts} 
+        filterBy={filterProducts}
         />
         <Footer />
       </div>
@@ -44,8 +53,13 @@ products: state.products
 return{
   getProducts: ()=>{
     getProducts(dispatch)
+  },
+  filterProducts: ()=>{
+    filterProducts(dispatch)
   }
-  }
+    
+  
+}
   
 }
 )(Catalog);
