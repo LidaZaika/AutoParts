@@ -65,7 +65,7 @@ const {data, click, filterBy} = this.props;
     </div>       
 <div className="menu-horizontal">
     <div className="hamburger-menu">
-        <img height="20px" width="20px" src="static/images/hamburger-menu.png"/>&nbsp;&nbsp;
+        <img height="20px" width="20px" src="images/hamburger-menu.png"/>&nbsp;&nbsp;
         <p>Каталог ТО и товары</p>
     </div>
     <div className="menu-sort">
@@ -79,7 +79,7 @@ const {data, click, filterBy} = this.props;
         </div>
         <div className="sort-layout">
             <div>Компоновка </div>
-            <div>&nbsp;&nbsp;<img id="sortinline"  src="static/images/layout1.png"/>&nbsp;&nbsp; <img id="sortflex" onclick="sortflex()" src="static/images/layout2.png"/> </div>
+            <div>&nbsp;&nbsp;<img id="sortinline"  src="images/layout1.png"/>&nbsp;&nbsp; <img id="sortflex" onclick="sortflex()" src="images/layout2.png"/> </div>
         </div>
         <div>
         Показывать по&nbsp;&nbsp; 8&nbsp;&nbsp; 12&nbsp;&nbsp; 16&nbsp;&nbsp; 24&nbsp;&nbsp;
@@ -108,21 +108,21 @@ const {data, click, filterBy} = this.props;
             <p><input id="slider" type="range" min="0" max="100" step="1" value="50"/></p> 
         </div>
         <div className="characteristic-OIL">
-            <p><b onClick={this.btn}>Вязкость SAE</b> &nbsp;<img id="sae1" onClick={this.btn} src="static/images/down arrow.png"/>	</p>
+            <p><b onClick={this.btn}>Вязкость SAE</b> &nbsp;<img id="sae1" onClick={this.btn} src="images/down arrow.png"/>	</p>
                 {/* <div className={`sae2 ${this.state.display}`}>
                 <input type="checkbox"  id="yes"/><label for="yes" id="SAEyes">5W</label>
                 <input type="checkbox" id="no"/><label for="no" id="SAEno">10W</label>
                 </div> */}
         </div>
         <div className="characteristic-OIL">
-            <p><b onClick={this.btnACEA}>Классификация ACEA</b> &nbsp;<img onClick={this.btnACEA} src="static/images/down arrow.png"/></p>	
+            <p><b onClick={this.btnACEA}>Классификация ACEA</b> &nbsp;<img onClick={this.btnACEA} src="images/down arrow.png"/></p>	
             {/* <div className={`acea2 ${this.state.displayacea}`}>
                 <input type="checkbox"  id="yes"/><label for="yes" id="SAEyes">A</label>
                 <input type="checkbox" id="no"/><label for="no" id="SAEno">C</label>
             </div> */}
         </div>
         <div className="characteristic-OIL">
-            <p><b>Классификация API</b> <img src="static/images/down arrow.png"/></p>	
+            <p><b>Классификация API</b> <img src="images/down arrow.png"/></p>	
         </div>
         <div className="characteristic-OIL">
             <p> <font color="#ce9840" ><b> Объем, л</b></font></p>

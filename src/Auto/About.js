@@ -26,7 +26,7 @@ class About extends PureComponent {
                 </div>
             </form>
           </div>
-          <div className="imgAbout"><img height="410px" width="100%" alt="" src="static/images/foto4.jpg"/></div>
+          <div className="imgAbout"><img height="410px" width="100%" alt="" src="images/foto4.jpg"/></div>
           </div>
     );
   }

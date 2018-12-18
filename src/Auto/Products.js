@@ -17,7 +17,7 @@ class Products extends Component {
 					<a>Ароматизаторы</a>
 					</div>
 					<div className="STcatalog foto"><img height="60%" width="60%" alt=""
-					src="static/images/foto5.png"/></div>
+					src="images/foto5.png"/></div>
 				</div>
 				<div>
 					<div className="STcatalog text">
@@ -27,7 +27,7 @@ class Products extends Component {
 					<a>Всесезонные</a>
 					</div>
 				<div className="STcatalog foto"><img height="60%" width="60%" alt=""
-					src="static/images/foto6.png"/></div>
+					src="images/foto6.png"/></div>
 				</div>
 				<div>
 					<div className="text STcatalog">
@@ -36,12 +36,12 @@ class Products extends Component {
 					<a>Штампованые </a><br/>
 					</div>
 					<div className="foto STcatalog"><img height="70%" width="70%" alt=""
-					src="static/images/foto7.png"/>
+					src="images/foto7.png"/>
 					</div>
 				</div>
 				<div>
 				<img height="100%" width="100%" alt=""
-					src="static/images/foto8.jpg"/>
+					src="images/foto8.jpg"/>
 				</div>
 				<div>
 					<div className="text STcatalog">
@@ -51,7 +51,7 @@ class Products extends Component {
 					<a>Прикуриватели</a> <br/>
 					</div>
 					<div className="foto STcatalog"><img height="60%" width="60%" alt=""
-					src="static/images/foto9.png"/>
+					src="images/foto9.png"/>
 					</div>
 				</div>
 				<div>
@@ -62,7 +62,7 @@ class Products extends Component {
 					<a>Гибридные</a> <br/>
 					</div>
 					<div className="foto STcatalog"><img height="60%" width="60%" alt=""
-					src="static/images/foto10.png"/>
+					src="images/foto10.png"/>
 					</div>
 				</div>	
 				<div>
@@ -73,7 +73,7 @@ class Products extends Component {
 					<a>Домкраты</a> <br/>
 					</div>
 					<div className="foto STcatalog"><img height="100%" width="100%" alt=""
-					src="static/images/foto11.png"/>
+					src="images/foto11.png"/>
 					</div>
 				</div>
 				<div>
@@ -83,11 +83,11 @@ class Products extends Component {
 					<a>Моторные</a> <br/>
 					</div>
 					<div className="foto STcatalog"><img height="100%" width="100%" alt=""
-					src="static/images/foto12.png"/>
+					src="images/foto12.png"/>
 					</div>
 				</div>
 				<div className="fotovbloke">
-				<img height="100%" width="100%" alt="" src="static/images/foto13.jpg"/>
+				<img height="100%" width="100%" alt="" src="images/foto13.jpg"/>
 				</div>
 			</div>
 		</div>

@@ -22,9 +22,9 @@ class Footer extends Component {
             Присоединяйтесь!
           </div>
           <div  className="socseti">
-            <a href="/"><img src="static/images/vk.png" alt="vk" width="50" height="50"/></a>
-            <a href="/"><img src="static/images/fb.png" alt="fb" width="50" height="50"/></a>
-            <a href="/"><img src="static/images/tg.png" alt="tg" width="50" height="50"/></a>  
+            <a href="/"><img src="images/vk.png" alt="vk" width="50" height="50"/></a>
+            <a href="/"><img src="images/fb.png" alt="fb" width="50" height="50"/></a>
+            <a href="/"><img src="images/tg.png" alt="tg" width="50" height="50"/></a>  
           </div>
         	<div className="frame">
       <iframe  src=

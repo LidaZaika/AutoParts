@@ -9,7 +9,7 @@ class BagProduct extends Component {
             </div>
             <div className="article"> 
                     <div className="article1"><input type="checkbox" id="article1"/></div>
-                    <div className="imgarticle"><img  width="180px" alt="" src="static/images/headlight.jpg"/></div>
+                    <div className="imgarticle"><img  width="180px" alt="" src="images/headlight.jpg"/></div>
                     <div id="name-article"><label for="article1"><b>Фара противотуманная, &nbsp;левая,&nbsp; ASAM, &nbsp;30483</b></label><br/>Артикул: 123456</div>
                     <div className="number">  <button className="btn btn-danger"  onclick="S2()">-</button>
                         <input className="input" id="vetind" name="vetind"size="10" type="text" value="0"/>
@@ -20,7 +20,7 @@ class BagProduct extends Component {
             </div>
             <div className="article">
                 <div className="article1"><input type="checkbox" id="article2"/></div>
-                    <div className="imgarticle"><img width="150px" alt="" src="static/images/accumulator.jpg"/></div>
+                    <div className="imgarticle"><img width="150px" alt="" src="images/accumulator.jpg"/></div>
                     <div id="name-article"><label for="article2"><b>Аккумуляторная батарея Bosch Funstart AGM,<br/>
                 12B, 8А/ч, 150А, 0092М60110</b></label><br/>Артикул: 123456</div>
                 <div className="number">  <button className="btn btn-danger" onclick="S4()" onclick="summin()">-</button>
@@ -32,7 +32,7 @@ class BagProduct extends Component {
             </div>
             <div className="article">
                     <div className="article1"><input type="checkbox" id="article2"/></div>
-                    <div className="imgarticle"><img width="150px" alt="" src="static/images/accumulator.jpg"/></div>
+                    <div className="imgarticle"><img width="150px" alt="" src="images/accumulator.jpg"/></div>
                     <div id="name-article"><label for="article3"><b>Аккумуляторная батарея Bosch Funstart AGMC,<br/>
                 12B, 8А/ч, 150А, 0092М60111</b></label><br/>Артикул: 123457</div>
                 <div className="number">  <button className="btn btn-danger" onclick="S5()">-</button>
