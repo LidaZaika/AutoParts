@@ -7,7 +7,7 @@ class Header extends Component {
 			<div className="menustart">
 				<ul>
 					<li id="tel">(812) 123-45-67</li>
-					<li id="onas"><a href="/"> Онас</a></li>
+					<li id="onas"><a href="/"> О нас</a></li>
 					<li id="cat"><a href="/Catalog">Каталог</a></li>
 				</ul>
 			</div>

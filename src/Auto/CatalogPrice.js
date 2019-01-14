@@ -5,57 +5,27 @@ class CatalogPrice extends React.PureComponent {
     constructor(props){
         super(props);
         this.state={
-          display: "sae2",
-          displayacea: "acea2",
-          
+            brands: ""
         }
+       
+
       }; 
 
 
-// filterBy=(event)=>{
-//     console.log(event.target.value);
-// if(event.target.checked){
-//     this.setState({brands:event.target.value})
-// }else {
-//     this.setState({brands:""})
-// }
+// filterBy1=(event, value)=>{
+// // this.props.click=this.filter.push() 
+// console.log(event.target.value);
+// // if(event.target.checked){
+// //     this.setState({brands:event.target.value})
+// // }else {
+// //     this.setState({brands:""})
+// // }
 // };
-filterBy2=(event)=>{
-    console.log(event.target.value);
-if(event.target.checked){
-    this.setState({liters:event.target.value})
-}else {
-    this.setState({liters:""})
-}
-};
-btn =(e)=>{
-    console.log(e);
-if(this.state.display=="sae2n"){
-    this.setState({display:"sae2b"})
-}else{
-    this.setState({display:"sae2n"})
-}
-};
-btnACEA=(e)=>{
-    console.log(e);
-if(this.state.displayacea=="acea2n"){
-    this.setState({displayacea:"acea2b"})
-}else{
-    this.setState({displayacea:"acea2n"})
-}
-};
+
 
    render() {
-
-const {data, click, filterBy} = this.props;
-// let oil = [];
-// if (this.state.brands==""){
-//     oil=data
-// }else{
-//     oil = data.filter(el=>(el.brand===this.state.brands));
-//     // filter(el=>(el.liter===this.state.liters));
-   
-// };
+    
+const {data, click, filterBy, filterByford, sortBy} = this.props;
 
       return (
       <div>
@@ -72,7 +42,7 @@ const {data, click, filterBy} = this.props;
         <div className="sort-all">
             <ul className="sort">
             <li>Сортировать по:&nbsp;&nbsp;</li>
-            <li><a>наименованию &darr;&nbsp;&nbsp;</a></li>
+            <li><a onClick={sortBy}>наименованию  &darr;&nbsp;&nbsp;</a></li>
             <li><a>цене &darr;&nbsp;&nbsp;</a></li> 
             <li><a>популярности &uarr;&nbsp;&nbsp;</a>	</li>
             </ul>
@@ -92,14 +62,14 @@ const {data, click, filterBy} = this.props;
         <p> <font color="#ce9840" ><b>Производитель</b></font></p>
         <div>
             <p>
-            <input type="checkbox" name="option1" value="Castrol" id="box-1" onClick={filterBy} onChange={this.filterChecked}/><label for="box-1" className="name-maker">Castrol</label><br/>
-            <input type="checkbox" name="option2" value="Ford" id="box-2"onClick={filterBy}/><label for="box-2"className="name-maker">Ford</label><br/>
-            <input type="checkbox" name="option3" value="General Motors" id="box-3"onClick={filterBy}/><label for="box-3"className="name-maker">General Motors</label><br/> 
-            <input type="checkbox" name="option4" value="Liqui Moly" id="box-4"onClick={filterBy}/><label for="box-4"className="name-maker">Liqui Moly</label><br/> 
-            <input type="checkbox" name="option5" value="Mobil" id="box-5"onClick={filterBy}/><label for="box-5"className="name-maker">Mobil</label><br/>
-            <input type="checkbox" name="option6" value="Nissan" id="box-6"onClick={filterBy}/><label for="box-6"className="name-maker">Nissan</label><br/> 
-            <input type="checkbox" name="option7" value="Total" id="box-7"onClick={filterBy}/><label for="box-7"className="name-maker">Total</label><br/>
-            <input type="checkbox" name="option8" value="a8" id="box-8"onClick={filterBy}/><label for="box-8"className="name-maker" id="one">Еще один</label>
+            <input type="checkbox" name="Castrol" value="Castrol" id="box-1" onClick={filterBy}/><label for="box-1" className="name-maker">Castrol</label><br/>
+            <input type="checkbox" name="option2" value="Ford" id="box-2" onClick={filterByford}/><label for="box-2"className="name-maker">Ford</label><br/>
+            <input type="checkbox" name="option3" value="General Motors" id="box-3" onClick={filterBy}/><label for="box-3"className="name-maker">General Motors</label><br/> 
+            <input type="checkbox" name="option4" value="Liqui Moly" id="box-4" onClick={filterBy}/><label for="box-4"className="name-maker">Liqui Moly</label><br/> 
+            <input type="checkbox" name="option5" value="Mobil" id="box-5" onClick={filterBy}/><label for="box-5"className="name-maker">Mobil</label><br/>
+            <input type="checkbox" name="option6" value="Nissan" id="box-6" onClick={filterBy}/><label for="box-6"className="name-maker">Nissan</label><br/> 
+            <input type="checkbox" name="option7" value="Total" id="box-7" onClick={filterBy}/><label for="box-7"className="name-maker">Total</label><br/>
+            <input type="checkbox" name="option8" value="a8" id="box-8" onClick={filterBy}/><label for="box-8"className="name-maker" id="one">Еще один</label>
             </p>
             <p className="dot" onClick={click}>Все производители </p>
         </div>
